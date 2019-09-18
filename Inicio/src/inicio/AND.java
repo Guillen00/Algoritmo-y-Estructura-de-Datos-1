@@ -1,10 +1,15 @@
 
 package inicio;
 
+import static inicio.Imagen.seleccion;
+import java.awt.Dimension;
+import java.awt.Graphics;
+import javax.swing.ImageIcon;
 
-public class AND {
 
-    static int and;
+public class AND extends javax.swing.JPanel{
+
+    /*static int and;
     
      
 
@@ -74,7 +79,33 @@ public class AND {
             System.out.println('1');
             return 1;}
             
-        }  
+        } */
+    public AND() {
+        this.setSize(500, 800); //se selecciona el tamaño del panel
+        
+        }
+        public void AND (Graphics g){
+        
+        Dimension height = getSize();
+
+        //Se selecciona la imagen que tenemos en el paquete de la //ruta del programa
+        String L = seleccion;
+        
+        if (seleccion != null){
+
+        ImageIcon AND = new ImageIcon(getClass().getResource("/Imagenes/AND.png")); 
+
+        //se dibuja la imagen que tenemos en el paquete Images //dentro de un panel
+
+        g.drawImage(AND.getImage(), 5, 5, 50, 50, null);
+        //grafico.setColor(java.awt.Color.BLACK);
+        //grafico.drawLine(50, 30, 100, 30);
+            }
+        setOpaque(false);
+        super.paintComponent(g);
     }
-/*}*/
+
+  
+
+}
 

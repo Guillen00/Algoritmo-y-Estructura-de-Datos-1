@@ -5,19 +5,23 @@
  */
 package inicio;
 
+
+import java.awt.Component;
+import java.util.ArrayList;
 import javax.swing.DefaultListModel;
 
-/**
- *
- * @author leona
- */
 public final class Window extends javax.swing.JFrame {
     DefaultListModel modelo;
+    public static ArrayList<Object> componentes = new ArrayList<>();
+    int i = 0;
+    
     public Window() {
     initComponents();
     Insertar();
-    Mover joda = new Mover();
-    jLabel1.add(joda);
+    ComponentDragger dragger = new ComponentDragger();
+    jPanel1.addMouseListener(dragger);
+    jPanel1.addMouseMotionListener(dragger);
+    
     }
     void Insertar(){
         modelo= new DefaultListModel();
@@ -42,7 +46,6 @@ public final class Window extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
         jRadioButton1 = new javax.swing.JRadioButton();
         jRadioButton2 = new javax.swing.JRadioButton();
         jButton1 = new javax.swing.JButton();
@@ -56,23 +59,15 @@ public final class Window extends javax.swing.JFrame {
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel1.setName("panel1"); // NOI18N
 
-        jLabel1.setText("jLabel1");
-
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(366, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addGap(109, 109, 109))
+            .addGap(0, 509, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(75, 75, 75)
-                .addComponent(jLabel1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGap(0, 476, Short.MAX_VALUE)
         );
 
         jRadioButton1.setText("Dibujar");
@@ -150,12 +145,17 @@ public final class Window extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        Imagen Imagen = new Imagen();
-        jPanel1.add(Imagen);
-        jPanel1.repaint();
         Imagen seleccion =new Imagen();
         seleccion.Seleccion(jList1.getSelectedValue());
-        System.out.println(jList1.getSelectedValue());
+        
+        Imagen Imagen = new Imagen();
+        componentes.add(Imagen);
+        
+        jPanel1.add((Component) componentes.get(i++));
+        //jPanel1.add(new Imagen());
+        System.out.println(i);
+        jPanel1.repaint();
+       
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jRadioButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton2ActionPerformed
@@ -205,7 +205,6 @@ public final class Window extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JList<String> jList1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JRadioButton jRadioButton1;
