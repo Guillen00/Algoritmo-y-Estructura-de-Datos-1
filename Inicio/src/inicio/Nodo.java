@@ -20,8 +20,12 @@ public class Nodo{
     this.y =y;
     
     }
+
+    Nodo() {
+        }
     public void pintar (Graphics g){
         g.drawOval(this.x - d/2, this.y - d/2, d, d);
+        System.out.println(x);
     }
     public int getX(){
         return x;

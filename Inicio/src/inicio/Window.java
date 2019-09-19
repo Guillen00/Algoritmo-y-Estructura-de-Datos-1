@@ -12,13 +12,14 @@ import javax.swing.DefaultListModel;
 
 public final class Window extends javax.swing.JFrame {
     DefaultListModel modelo;
+    ComponentDragger dragger = new ComponentDragger();
     public static ArrayList<Object> componentes = new ArrayList<>();
     int i = 0;
     
     public Window() {
     initComponents();
     Insertar();
-    ComponentDragger dragger = new ComponentDragger();
+    
     jPanel1.addMouseListener(dragger);
     jPanel1.addMouseMotionListener(dragger);
     
@@ -54,6 +55,7 @@ public final class Window extends javax.swing.JFrame {
         jList1 = new javax.swing.JList<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMinimumSize(new java.awt.Dimension(800, 580));
 
         jPanel1.setBackground(java.awt.Color.white);
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -141,7 +143,8 @@ public final class Window extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        
+        Tabla tabla = new Tabla();
+        tabla.setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -163,7 +166,16 @@ public final class Window extends javax.swing.JFrame {
     }//GEN-LAST:event_jRadioButton2ActionPerformed
 
     private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
-        // TODO add your handling code here:
+        // dibujar
+        if (jRadioButton1.isSelected()){
+            Conectores conector = new Conectores();
+            jPanel1.add(conector);
+            jPanel1.removeMouseMotionListener(dragger);
+        }
+        else{
+            jPanel1.addMouseListener(dragger);
+            jPanel1.addMouseMotionListener(dragger);
+        }
     }//GEN-LAST:event_jRadioButton1ActionPerformed
 
     /**
