@@ -28,6 +28,7 @@ public class Connector extends Component {
     //Functionality Variables
     Boolean state = null;
     Component comp;
+    int countIn =0;
 
     public Connector(int x, int y, Orientation _orientation, Types.IO type) {
         this.x = x;
@@ -89,6 +90,7 @@ public class Connector extends Component {
 
     void updateState() {
         state = node.getState();
+        System.out.println(state+"  connector|   ");
     }
         String getName(){
         return "Connector";

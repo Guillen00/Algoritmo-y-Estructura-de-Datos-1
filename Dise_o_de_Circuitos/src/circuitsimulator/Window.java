@@ -13,9 +13,7 @@ import java.awt.*;
  */
 public class Window extends JFrame {
     static Sheet sheet;
-    static SimulateToolbar sim;
-    static String fixedTitle = "iSee Circuits";
-    static String fileName = "Untitled";
+    //static Simulacion sim;
     static String title = "Diseño de Circuitos by Leonardo Guillén Fernandez 2019";
     static Window ref;
     public Window(){
@@ -32,10 +30,7 @@ public class Window extends JFrame {
         
         this.setLocationRelativeTo(null);
         this.setVisible(true);
+        
     }
-    
-    static void changeTitle(String s){
-        title = s+" - "+fixedTitle;
-        ref.setTitle(title);
-    }
+   
 }

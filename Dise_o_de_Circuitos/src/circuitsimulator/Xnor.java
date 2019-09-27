@@ -56,7 +56,7 @@ public class Xnor extends Component {
     }
 
     void updateState() {
-        state = Primitives.XNOR(inConnectors);
+        state = Logica.XNOR(inConnectors);
     }
 
     void draw(Graphics2D g2d) {

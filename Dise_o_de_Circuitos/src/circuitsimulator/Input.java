@@ -88,12 +88,7 @@ public class Input extends Component {
         Color colorBackup = g2d.getColor();
         Stroke strokeBackup = g2d.getStroke();
 
-//        BasicStroke str = new BasicStroke(3.0f,BasicStroke.CAP_ROUND,BasicStroke.JOIN_MITER);
-//        g2d.setStroke(str);
-//        g2d.draw(new Line2D.Double(o.x + o.width, o.y + (o.height / 2), o.x + 60, o.y + (o.height / 2)));
         drawConnectors(g2d);
-//g2d.setColor(Color.black);
-//g2d.draw(shape);
         g2d.setColor(shapeColor);
         g2d.fill(shape);
         g2d.setColor(labelColor);
@@ -106,7 +101,6 @@ public class Input extends Component {
     }
 
     void delete() {
-        System.out.println("Deleter");
         Component.drawable.remove(this);
     }
 

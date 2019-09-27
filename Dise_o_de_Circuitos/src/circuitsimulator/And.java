@@ -51,7 +51,7 @@ public class And extends Component {
     }
 
     Boolean getState() {
-        return Primitives.AND(inConnectors);
+        return Logica.AND(inConnectors);
     }
 
     void draw(Graphics2D g2d) {

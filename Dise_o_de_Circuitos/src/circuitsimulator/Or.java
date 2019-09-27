@@ -63,7 +63,7 @@ public class Or extends Component {
     }
 
     void updateState() {
-        state = Primitives.OR(inConnectors);
+        state = Logica.OR(inConnectors);
     }
 
     void draw(Graphics2D g2d) {

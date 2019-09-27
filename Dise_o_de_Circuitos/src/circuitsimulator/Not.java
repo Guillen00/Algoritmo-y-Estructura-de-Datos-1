@@ -55,7 +55,7 @@ public class Not extends Component {
     }
 
     Boolean getState() {
-        return Primitives.NOT(inConnectors.get(0).getState());
+        return Logica.NOT(inConnectors.get(0).getState());
     }
 
     void draw(Graphics2D g2d) {

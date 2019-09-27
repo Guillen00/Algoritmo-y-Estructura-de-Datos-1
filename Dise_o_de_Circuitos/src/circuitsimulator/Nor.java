@@ -56,7 +56,7 @@ public class Nor extends Component {
     }
 
     void updateState() {
-        state = Primitives.NOR(inConnectors);
+        state = Logica.NOR(inConnectors);
     }
 
     Area getShape() {

@@ -18,8 +18,6 @@ public class Verticalbar extends JPanel {
     JRadioButton track;
     JRadioButton component;
     JRadioButton select;
-    Color activeColor = Color.lightGray;
-    Color inactiveColor = new Color(238,238,238);
     static Verticalbar instance;
 
     /**
@@ -78,15 +76,16 @@ public class Verticalbar extends JPanel {
     }
 
     void setActive(ActionEvent e) {
-        select.setBackground(inactiveColor);
-        component.setBackground(inactiveColor);
-        track.setBackground(inactiveColor);
-        ((JButton) e.getSource()).setBackground(activeColor);
+        select.setSelected(false);
+        component.setSelected(false);
+        track.setSelected(false);
+        //((JButton) e.getSource()).setBackground(activeColor);
+        ((JRadioButton) e.getSource()).setSelected(true);
     }
     
    void setComponentActive(){
-        select.setBackground(inactiveColor);
-        component.setBackground(activeColor);
-        track.setBackground(inactiveColor);
+        select.setSelected(false);
+        component.setSelected(true);
+        track.setSelected(false);
     }
 }

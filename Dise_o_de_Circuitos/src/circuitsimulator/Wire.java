@@ -16,7 +16,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
 public class Wire extends Component {
 
     static CopyOnWriteArrayList<Wire> allTheWires = new CopyOnWriteArrayList<>();
-    static float width = 3;
+    static float width = 7;
     static Color color = Color.GRAY;
     static Color mouseOverColor = Color.red;
     static BasicStroke stroke = new BasicStroke(width, BasicStroke.CAP_ROUND, BasicStroke.JOIN_MITER);
@@ -57,24 +57,16 @@ public class Wire extends Component {
         to = c2;
     }
 
-//    public Boolean getState() {
-//        return from.getState();
-//    }
     public void wireUnderProduction() {
-//        Polygon p = new Polygon();
-//        p.
     }
 
     public void draw(Graphics2D g2d) {
         g2d.setColor(color);
-//        if(polyline.intersect(new Point(Mouse.getLocX(),Mouse.getLocY()))) {
-//            System.out.println("asdf");
-//            g2d.setColor(mouseOverColor);
-//        }
+
         g2d.setStroke(stroke);
         g2d.draw(polyline);
     }
-
+/*
     public static void delete(final ArrayList<Connector> in, final ArrayList<Connector> out) {
         Thread deleteThread = new Thread() {
             public void run() {
@@ -100,7 +92,7 @@ public class Wire extends Component {
             }
         };
         deleteThread.start();
-    }
+    }*/
 
     public static void DrawAll(Graphics2D g2d) {
         for (Wire wire : allTheWires) {

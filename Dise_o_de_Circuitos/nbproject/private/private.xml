@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/leona/Documents/TEC/2%20Semestre/1%20Proyecto/Digital-Logic-Circuit-Simulator-master/Digital-Logic-Circuit-Simulator-master/Dise_o_de_Circuitos/src/circuitsimulator/ComponentsViewer.java</file>
+            <file>file:/C:/Users/leona/Documents/TEC/2%20Semestre/1%20Proyecto/Digital-Logic-Circuit-Simulator-master/Digital-Logic-Circuit-Simulator-master/Dise_o_de_Circuitos/src/circuitsimulator/CirElement.java</file>
+            <file>file:/C:/Users/leona/Documents/TEC/2%20Semestre/1%20Proyecto/Digital-Logic-Circuit-Simulator-master/Digital-Logic-Circuit-Simulator-master/Dise_o_de_Circuitos/src/circuitsimulator/SimulateToolbar.java</file>
+            <file>file:/C:/Users/leona/Documents/TEC/2%20Semestre/1%20Proyecto/Digital-Logic-Circuit-Simulator-master/Digital-Logic-Circuit-Simulator-master/Dise_o_de_Circuitos/src/circuitsimulator/Primitives.java</file>
+            <file>file:/C:/Users/leona/Documents/TEC/2%20Semestre/1%20Proyecto/Digital-Logic-Circuit-Simulator-master/Digital-Logic-Circuit-Simulator-master/Dise_o_de_Circuitos/src/circuitsimulator/Types.java</file>
+            <file>file:/C:/Users/leona/Documents/TEC/2%20Semestre/1%20Proyecto/Digital-Logic-Circuit-Simulator-master/Digital-Logic-Circuit-Simulator-master/Dise_o_de_Circuitos/src/circuitsimulator/Node.java</file>
+            <file>file:/C:/Users/leona/Documents/TEC/2%20Semestre/1%20Proyecto/Digital-Logic-Circuit-Simulator-master/Digital-Logic-Circuit-Simulator-master/Dise_o_de_Circuitos/src/circuitsimulator/AndShape.java</file>
+            <file>file:/C:/Users/leona/Documents/TEC/2%20Semestre/1%20Proyecto/Digital-Logic-Circuit-Simulator-master/Digital-Logic-Circuit-Simulator-master/Dise_o_de_Circuitos/src/circuitsimulator/Wire.java</file>
+            <file>file:/C:/Users/leona/Documents/TEC/2%20Semestre/1%20Proyecto/Digital-Logic-Circuit-Simulator-master/Digital-Logic-Circuit-Simulator-master/Dise_o_de_Circuitos/src/circuitsimulator/Mouse.java</file>
+            <file>file:/C:/Users/leona/Documents/TEC/2%20Semestre/1%20Proyecto/Digital-Logic-Circuit-Simulator-master/Digital-Logic-Circuit-Simulator-master/Dise_o_de_Circuitos/src/circuitsimulator/Output.java</file>
+            <file>file:/C:/Users/leona/Documents/TEC/2%20Semestre/1%20Proyecto/Digital-Logic-Circuit-Simulator-master/Digital-Logic-Circuit-Simulator-master/Dise_o_de_Circuitos/src/circuitsimulator/Sheet.java</file>
+            <file>file:/C:/Users/leona/Documents/TEC/2%20Semestre/1%20Proyecto/Digital-Logic-Circuit-Simulator-master/Digital-Logic-Circuit-Simulator-master/Dise_o_de_Circuitos/src/circuitsimulator/Xnor.java</file>
+            <file>file:/C:/Users/leona/Documents/TEC/2%20Semestre/1%20Proyecto/Digital-Logic-Circuit-Simulator-master/Digital-Logic-Circuit-Simulator-master/Dise_o_de_Circuitos/src/circuitsimulator/Input.java</file>
+            <file>file:/C:/Users/leona/Documents/TEC/2%20Semestre/1%20Proyecto/Digital-Logic-Circuit-Simulator-master/Digital-Logic-Circuit-Simulator-master/Dise_o_de_Circuitos/src/circuitsimulator/Connector.java</file>
+            <file>file:/C:/Users/leona/Documents/TEC/2%20Semestre/1%20Proyecto/Digital-Logic-Circuit-Simulator-master/Digital-Logic-Circuit-Simulator-master/Dise_o_de_Circuitos/src/circuitsimulator/Not.java</file>
+            <file>file:/C:/Users/leona/Documents/TEC/2%20Semestre/1%20Proyecto/Digital-Logic-Circuit-Simulator-master/Digital-Logic-Circuit-Simulator-master/Dise_o_de_Circuitos/src/circuitsimulator/Verticalbar.java</file>
+            <file>file:/C:/Users/leona/Documents/TEC/2%20Semestre/1%20Proyecto/Digital-Logic-Circuit-Simulator-master/Digital-Logic-Circuit-Simulator-master/Dise_o_de_Circuitos/src/circuitsimulator/CircuitSimulator.java</file>
+            <file>file:/C:/Users/leona/Documents/TEC/2%20Semestre/1%20Proyecto/Digital-Logic-Circuit-Simulator-master/Digital-Logic-Circuit-Simulator-master/Dise_o_de_Circuitos/src/circuitsimulator/Nand.java</file>
+            <file>file:/C:/Users/leona/Documents/TEC/2%20Semestre/1%20Proyecto/Digital-Logic-Circuit-Simulator-master/Digital-Logic-Circuit-Simulator-master/Dise_o_de_Circuitos/src/circuitsimulator/OrShape.java</file>
+            <file>file:/C:/Users/leona/Documents/TEC/2%20Semestre/1%20Proyecto/Digital-Logic-Circuit-Simulator-master/Digital-Logic-Circuit-Simulator-master/Dise_o_de_Circuitos/src/circuitsimulator/Window.java</file>
+            <file>file:/C:/Users/leona/Documents/TEC/2%20Semestre/1%20Proyecto/Digital-Logic-Circuit-Simulator-master/Digital-Logic-Circuit-Simulator-master/Dise_o_de_Circuitos/src/circuitsimulator/Component.java</file>
+            <file>file:/C:/Users/leona/Documents/TEC/2%20Semestre/1%20Proyecto/Digital-Logic-Circuit-Simulator-master/Digital-Logic-Circuit-Simulator-master/Dise_o_de_Circuitos/src/circuitsimulator/And.java</file>
+            <file>file:/C:/Users/leona/Documents/TEC/2%20Semestre/1%20Proyecto/Digital-Logic-Circuit-Simulator-master/Digital-Logic-Circuit-Simulator-master/Dise_o_de_Circuitos/src/circuitsimulator/Nor.java</file>
+        </group>
+    </open-files>
+</project-private>

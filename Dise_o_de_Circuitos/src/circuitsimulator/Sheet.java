@@ -93,7 +93,6 @@ public class Sheet extends JPanel {
                 mouseLoc.x = e.getX();
                 mouseLoc.y = e.getY();
                 Point p = e.getPoint();
-                CircuitSimulator.win.sim.changeMousePosition(mouseLoc.x, mouseLoc.y);
                 if (CirElement.drawable.get(0).underMouse(p)) {
                     CirElement.drawable.get(0).moveComponent(p);
                 }
@@ -112,7 +111,7 @@ public class Sheet extends JPanel {
 
                 mouseLoc.setLocation(e.getX(), e.getY());
                 Mouse.setMouseLocaiton(e.getX(), e.getY());
-                CircuitSimulator.win.sim.changeMousePosition(mouseLoc.x, mouseLoc.y);
+                //Window.sim.changeMousePosition(mouseLoc.x, mouseLoc.y);
             }
         });
 
@@ -180,7 +179,6 @@ public class Sheet extends JPanel {
     void select(MouseEvent e) {
         if (e.getClickCount() == 2&&SwingUtilities.isRightMouseButton(e)){
             Mouse.setDeleteLocation();
-            System.out.println("Success");
         }
     }
 
@@ -223,15 +221,5 @@ public class Sheet extends JPanel {
         }
     }
 
-    public void gridOff() {
-        grid = false;
-    }
-
-    public void toggleGrid() {
-        if (grid) {
-            grid = false;
-        } else {
-            grid = true;
-        }
-    }
+    
 }

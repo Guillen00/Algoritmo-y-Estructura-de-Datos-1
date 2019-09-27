@@ -71,7 +71,7 @@ public class Xor extends Component {
     }
 
     void updateState() {
-        state = Primitives.XOR(inConnectors);
+        state = Logica.XOR(inConnectors);
     }
 
     void draw(Graphics2D g2d) {

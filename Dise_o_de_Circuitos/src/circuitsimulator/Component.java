@@ -49,7 +49,6 @@ public abstract class Component {
     }
 
     void delete() {
-        Wire.delete(this.inConnectors, this.outConnectors);
         Component.drawable.remove(this);
         Mouse.resetDeleteLocation();
     }

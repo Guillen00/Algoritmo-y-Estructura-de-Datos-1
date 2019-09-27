@@ -20,7 +20,7 @@ public class Node extends Component {
 
     static ArrayList<Node> allTheNodes = new ArrayList<>();
     static int diameter = 12;
-    static Color outlineColor = Color.red;
+    static Color outlineColor = Color.RED;
     static int outlinePadding = 6;
     static float dash[] = {4.0f};
     static Stroke outlineStroke = new BasicStroke(1.5f, BasicStroke.CAP_BUTT, BasicStroke.JOIN_MITER, 10.0f, dash, 0.0f);
@@ -70,7 +70,7 @@ public class Node extends Component {
         updateState();
         return state;
     }
-
+//
     void updateState() {
         if (type == Types.IO.Output) {
             state = con.getState();
@@ -83,18 +83,15 @@ public class Node extends Component {
                 shortTest.add(state);
             }
         }
-        if(!shortTest.isEmpty()){
-            SimulateToolbar.shortMessage(shortTest);
+        /*if(!shortTest.isEmpty()){
+            Simulacion.shortMessage(shortTest);
             return;
-        }
+        }*/
         for (Node n : connectedTo) {
             if (n.type == Types.IO.Input) {
                 state = n.state;
                 return;
             }
-        }
-        for(Node n:connectedTo){
-            
         }
     }
  

@@ -66,7 +66,7 @@ public class Nand extends Component {
     }
 
     void updateState() {
-        state = Primitives.NAND(inConnectors);
+        state = Logica.NAND(inConnectors);
     }
     Rectangle getBounds(){
         return new Rectangle(x-padding,y-padding,width+2*padding,height+2*padding);

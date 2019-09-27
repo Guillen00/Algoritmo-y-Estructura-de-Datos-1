@@ -60,6 +60,7 @@ public class Output extends Component {
 
     void updateState() {
         state = inConnectors.get(0).getState();
+        System.out.println(state+"  output|   ");
         if (state == null) {
             labelColor = Color.RED;
             state = false;
