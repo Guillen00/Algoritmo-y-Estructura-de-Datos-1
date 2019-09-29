@@ -28,7 +28,7 @@ public class Connector extends Component {
     //Functionality Variables
     Boolean state = null;
     Component comp;
-    int countIn =0;
+    
 
     public Connector(int x, int y, Orientation _orientation, Types.IO type) {
         this.x = x;

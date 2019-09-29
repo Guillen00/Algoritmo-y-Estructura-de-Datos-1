@@ -64,6 +64,11 @@ public abstract class Component {
     Boolean getState() {
         return null;
     }
+    
+    Boolean setState(boolean valor) {
+        boolean valor1 = inConnectors.get(0).setState(valor);
+        return valor1;
+    }
 
     void onClick() {
     }

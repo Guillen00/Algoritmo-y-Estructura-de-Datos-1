@@ -34,6 +34,7 @@ public class Input extends Component {
         this.y = y;
         shape = new Rectangle(x, y, width, height);
         outConnectors.add(new Connector(x + width, y + (height / 2), Types.Orientation.Horizontal, Types.IO.Output, this));
+        
     }
 
     Rectangle getShape() {

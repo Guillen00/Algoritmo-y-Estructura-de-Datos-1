@@ -17,7 +17,7 @@ import java.util.ArrayList;
 public class CircuitSimulator {
 
     static Window win;
-    static Object[][] data;
+    static int countIn=0 ;
 
     /**
      * @param args the command line arguments
@@ -25,6 +25,7 @@ public class CircuitSimulator {
     public static void main(String[] args) {
         System.out.println("Inicio");
         win = new Window();
+  
     }
     
     static Component classForName(String selectedComp, int x, int y) {
@@ -71,6 +72,8 @@ public class CircuitSimulator {
                 break;
             case "Input":
                 c = new Input(x, y);
+                countIn++;
+                System.out.println(countIn+"  num entradas|   ");
                 break;
             case "Output":
                 c = new Output(x, y);
@@ -78,4 +81,6 @@ public class CircuitSimulator {
         }
         return c;
     }
+    static int getcountIn(){
+    return countIn; }
 }

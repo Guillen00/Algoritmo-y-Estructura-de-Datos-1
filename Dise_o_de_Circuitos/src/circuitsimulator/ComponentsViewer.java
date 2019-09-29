@@ -55,7 +55,7 @@ public class ComponentsViewer extends JPanel {
                 if (!e.getValueIsAdjusting()) {
                     String name = (String) list.getSelectedValue();
                     Mouse.setComponent(name);
-                    Mouse.mode = Mouse.mode.Component;
+                    //Mouse.mode = Mouse.mode.Component;
                     Verticalbar.instance.setComponentActive();
                     preview.repaint();
                 }
@@ -66,7 +66,7 @@ public class ComponentsViewer extends JPanel {
         JButton table = new JButton("Tabla Lógica");
         table.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent event) {
-                
+                new TablaLogica();
             }
         });
 

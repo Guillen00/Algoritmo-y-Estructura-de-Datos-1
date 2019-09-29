@@ -70,7 +70,7 @@ public class Node extends Component {
         updateState();
         return state;
     }
-//
+
     void updateState() {
         if (type == Types.IO.Output) {
             state = con.getState();
@@ -81,12 +81,11 @@ public class Node extends Component {
             if (n.type == Types.IO.Output) {
                 state = n.getState();
                 shortTest.add(state);
+                System.out.println(state+"  nodo|   ");
+                
+                
             }
         }
-        /*if(!shortTest.isEmpty()){
-            Simulacion.shortMessage(shortTest);
-            return;
-        }*/
         for (Node n : connectedTo) {
             if (n.type == Types.IO.Input) {
                 state = n.state;
