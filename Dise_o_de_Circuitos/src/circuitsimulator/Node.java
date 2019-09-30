@@ -74,11 +74,9 @@ public class Node extends Component {
             state = con.getState();
             return;
         }
-        ArrayList<Boolean> shortTest = new ArrayList<>();
         for (Node n : connectedTo) {
             if (n.type == Types.IO.Output) {
                 state = n.getState();
-                shortTest.add(state);
                 System.out.println(state+"  nodo|   ");
                 
                 

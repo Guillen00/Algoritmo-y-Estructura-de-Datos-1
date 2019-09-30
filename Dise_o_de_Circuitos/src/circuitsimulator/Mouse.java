@@ -25,8 +25,8 @@ public class Mouse {
     public enum Mode {
 
         Track,
-        Component,
-        Select
+        Component
+        
     };
 
     static void setComponent(String in) {
@@ -77,22 +77,5 @@ public class Mouse {
         return mode;
     }
 
-    static void setDeleteLocation() {
-        Thread autoReset = new Thread() {
-            public void run() {
-                try {
-                    Thread.sleep(400);
-                } catch (InterruptedException ex) {
-                    System.out.println("Interrupted");
-                }
-                resetDeleteLocation();
-            }
-        };
-        DeleteLocation = MouseLocation;
-        autoReset.start();
-    }
-
-    static void resetDeleteLocation() {
-        DeleteLocation = new Point(-50, -50);
-    }
+    
 }

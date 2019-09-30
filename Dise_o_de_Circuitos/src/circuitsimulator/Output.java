@@ -78,9 +78,7 @@ public class Output extends Component {
     }
 
     void draw(Graphics2D g2d) {
-        if (getBounds().contains(Mouse.DeleteLocation)) {
-            delete();
-        }
+        
         g2d.translate(tx, ty);
         Color colorBackup = g2d.getColor();
         Stroke strokeBackup = g2d.getStroke();

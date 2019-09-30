@@ -64,9 +64,7 @@ public class Or extends Component {
     }
 
     void draw(Graphics2D g2d) {
-        if (getBounds().contains(Mouse.DeleteLocation)) {
-            delete();
-        }
+        
         g2d.translate(tx, ty);
         drawConnectors(g2d);
         g2d.setColor(shapeColor);

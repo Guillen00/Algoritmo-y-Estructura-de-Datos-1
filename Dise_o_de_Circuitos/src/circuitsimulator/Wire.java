@@ -43,7 +43,7 @@ public class Wire extends Component {
         polyline.moveTo(x[0], y[0]);
         for (int index = 1; index < npoints; index++) {
             polyline.lineTo(x[index], y[index]);
-        };
+        }
         allTheWires.add(this);
     }
 

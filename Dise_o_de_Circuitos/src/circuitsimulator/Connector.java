@@ -86,9 +86,9 @@ public class Connector extends Component {
         state = in;
     }
 
-    void updateState() {
+    Boolean updateState() {
         state = node.getState();
-        System.out.println(state+"  connector|   ");
+        return state;
     }
         String getName(){
         return "Connector";

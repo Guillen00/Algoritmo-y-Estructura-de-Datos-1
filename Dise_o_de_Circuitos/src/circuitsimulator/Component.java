@@ -44,11 +44,6 @@ public abstract class Component {
         }
     }
 
-    void delete() {
-        Component.drawable.remove(this);
-        Mouse.resetDeleteLocation();
-    }
-
     String getName() {
         return null;
     }

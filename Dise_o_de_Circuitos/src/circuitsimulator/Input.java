@@ -1,15 +1,11 @@
 
 package circuitsimulator;
 
-import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics2D;
 import java.awt.Rectangle;
 import java.awt.Stroke;
-import java.awt.geom.GeneralPath;
-import java.awt.geom.Line2D;
-import java.util.ArrayList;
 
 /**Se crean las entradas que dan la informacion a las compuertas ,cambian datos de 1 a 0 y cambian de color 
  * Se configura la acción del objeto cuando se presiona con el mouse 
@@ -80,9 +76,7 @@ public class Input extends Component {
     }
 
     void draw(Graphics2D g2d) {
-        if (getBounds().contains(Mouse.DeleteLocation)) {
-            delete();
-        }
+        
         g2d.translate(tx, ty);
         Color colorBackup = g2d.getColor();
         Stroke strokeBackup = g2d.getStroke();
@@ -99,9 +93,6 @@ public class Input extends Component {
         g2d.translate(0, 0);
     }
 
-    void delete() {
-        Component.drawable.remove(this);
-    }
 
     String getName() {
         return "Input";
