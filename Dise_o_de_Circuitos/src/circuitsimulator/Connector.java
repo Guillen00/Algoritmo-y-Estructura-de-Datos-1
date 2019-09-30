@@ -1,7 +1,4 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package circuitsimulator;
 
 import java.awt.*;
@@ -9,9 +6,11 @@ import java.awt.geom.*;
 import circuitsimulator.Types.*;
 import java.util.ArrayList;
 
-/**
+/** Crea el conector ya sea entrada o salida depende de esta entra a un metodo diferente 
+ * mantiene el estado de la compuerta según el ususario haya puesto y se actualiza constantemente 
+ * 
  *
- * @author Hassan
+ * 
  */
 public class Connector extends Component {
 
@@ -25,7 +24,6 @@ public class Connector extends Component {
     Line2D.Double shape;
     BasicStroke stroke;
     Node node;
-    //Functionality Variables
     Boolean state = null;
     Component comp;
     

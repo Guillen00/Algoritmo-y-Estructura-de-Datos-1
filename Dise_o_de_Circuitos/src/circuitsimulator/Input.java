@@ -1,7 +1,4 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package circuitsimulator;
 
 import java.awt.BasicStroke;
@@ -14,9 +11,10 @@ import java.awt.geom.GeneralPath;
 import java.awt.geom.Line2D;
 import java.util.ArrayList;
 
-/**
+/**Se crean las entradas que dan la informacion a las compuertas ,cambian datos de 1 a 0 y cambian de color 
+ * Se configura la acción del objeto cuando se presiona con el mouse 
  *
- * @author Hassan
+ * 
  */
 public class Input extends Component {
 

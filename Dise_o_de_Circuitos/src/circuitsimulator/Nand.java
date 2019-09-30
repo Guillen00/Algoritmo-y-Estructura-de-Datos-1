@@ -1,18 +1,13 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package circuitsimulator;
 
 import circuitsimulator.Component;
 import java.awt.*;
 import java.awt.geom.Area;
 import java.awt.geom.Ellipse2D;
-import java.util.ArrayList;
 
-/**
- *
- * @author Hassan
+/**Se crean las compuertas NAND con dos valores de medidas y como n ,numero de entradas
+ * Se crean metodos que mandan la lógica de las compuertas y dibujan la compuerta .
  */
 public class Nand extends Component {
 
@@ -81,7 +76,6 @@ public class Nand extends Component {
         g2d.setColor(shapeColor);
         g2d.setStroke(stroke);
         g2d.draw(shape);
-//        g2d.translate(0, 0);
     }
 
     void delete() {

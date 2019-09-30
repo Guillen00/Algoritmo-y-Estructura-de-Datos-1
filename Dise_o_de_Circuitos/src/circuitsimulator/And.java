@@ -1,20 +1,16 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package circuitsimulator;
 
 import circuitsimulator.Component;
 import java.awt.*;
 import java.awt.geom.Area;
 
-/**
- *
- * @author Hassan
+/**Se crean las compuertas AND con dos valores de medidas y como n ,numero de entradas ,envia a una lista donde se 
+    envia a otra función que dibuja la compuerta con sus respectivas entradas y salidas.
+ * Se crean metodos que mandan la lógica de las compuertas y dibujan la compuerta .
+ * 
  */
 public class And extends Component {
 
-    //Color shapeColor = Color.DARK_GRAY;
     Color shapeColor = Color.black;
     Area shape;
     int height = 50;

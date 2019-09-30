@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package circuitsimulator;
 
 import circuitsimulator.Types.IO;
@@ -13,9 +9,10 @@ import java.awt.Rectangle;
 import java.awt.Stroke;
 import java.awt.geom.Ellipse2D;
 
-/**
+/** Se crean las output ,dibuja la terminal de los circuitos ,dependiendo de como tranformen las compuertas 
+ * los datos ,los que llegan a la terminal será el mostrado
  *
- * @author Hassan
+ * 
  */
 public class Output extends Component {
 

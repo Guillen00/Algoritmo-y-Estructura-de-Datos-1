@@ -7,9 +7,8 @@ package circuitsimulator;
 import java.awt.*;
 import java.awt.geom.*;
 
-/**
- *
- * @author Hassan
+/**Se crean áreas para las AND  a utilizar ,en la que se dibujará la compuerta 
+ * 
  */
 public class AndShape extends Area {
 
@@ -30,10 +29,5 @@ public class AndShape extends Area {
         this.add(new Area(ellipseShape));
     }
 
-    public static Area getPreview() {
-        if (preview == null) {
-            preview = new AndShape(5,5);
-        }
-        return preview;
-    }
+    
 }

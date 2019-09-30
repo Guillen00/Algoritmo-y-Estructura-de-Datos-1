@@ -11,9 +11,11 @@ import java.awt.Rectangle;
 import java.awt.geom.Area;
 import java.awt.geom.Ellipse2D;
 
-/**
+/**Se crean las compuertas NOR con dos valores de medidas y como n ,numero de entradas ,envia a una lista donde se 
+    envia a otra funcion que dibuja la compuerta con sus respectivas entradas y salidas.
+ * Se crean metodos que mandan la lógica de las compuertas y dibujan la compuerta .
  *
- * @author Hassan
+ * 
  */
 public class Nor extends Component {
 

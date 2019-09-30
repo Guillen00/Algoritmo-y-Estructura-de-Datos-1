@@ -1,17 +1,13 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package circuitsimulator;
 
 import java.awt.*;
 import java.awt.geom.GeneralPath;
-import java.util.ArrayList;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-/**
+/**Esta clase lo que realiza es el dibujar la linea de conección entre compuertas ,para esto conecta nodos 
+ * y varia los puntos de una linea con forme se mueve el mouse.
  *
- * @author Hassan
+ * 
  */
 public class Wire extends Component {
 
@@ -20,7 +16,6 @@ public class Wire extends Component {
     static Color color = Color.GRAY;
     static Color mouseOverColor = Color.red;
     static BasicStroke stroke = new BasicStroke(width, BasicStroke.CAP_ROUND, BasicStroke.JOIN_MITER);
-//    ArrayList<Line2D.Double> allTheWires = new ArrayList<>();
     Node from;
     Node to;
     GeneralPath polyline;
@@ -66,33 +61,6 @@ public class Wire extends Component {
         g2d.setStroke(stroke);
         g2d.draw(polyline);
     }
-/*
-    public static void delete(final ArrayList<Connector> in, final ArrayList<Connector> out) {
-        Thread deleteThread = new Thread() {
-            public void run() {
-                for (Wire wire : allTheWires) {
-                    for (Connector con : in) {
-                        if (wire.from.getBounds().intersects(con.node.getBounds())) {
-                            allTheWires.remove(wire);
-                        }
-                        if (wire.to.getBounds().intersects(con.node.getBounds())) {
-                            allTheWires.remove(wire);
-                        }
-                    }
-                    for (Connector con : out) {
-                        if (wire.from.getBounds().intersects(con.node.getBounds())) {
-                            allTheWires.remove(wire);
-                        }
-                        if (wire.to.getBounds().intersects(con.node.getBounds())) {
-                            allTheWires.remove(wire);
-                        }
-                    }
-
-                }
-            }
-        };
-        deleteThread.start();
-    }*/
 
     public static void DrawAll(Graphics2D g2d) {
         for (Wire wire : allTheWires) {

@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package circuitsimulator;
 
 import java.awt.BasicStroke;
@@ -11,9 +7,10 @@ import java.awt.Rectangle;
 import java.awt.geom.Area;
 import java.awt.geom.Ellipse2D;
 
-/**
+/**Se crean las compuertas XNOR con dos valores de medidas y como n ,numero de entradas
+ * Se crean metodos que mandan la lógica de las compuertas y dibujan la compuerta .
  *
- * @author Hassan
+ * 
  */
 public class Xnor extends Component {
 

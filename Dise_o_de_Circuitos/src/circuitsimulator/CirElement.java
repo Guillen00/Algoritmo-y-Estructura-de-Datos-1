@@ -1,15 +1,11 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package circuitsimulator;
 
 import java.awt.*;
 import java.util.ArrayList;
 
-/**
+/**Mueve las coordenadas del mouse y lee estas en la pantalla
  *
- * @author Hassan
+ * 
  */
 public class CirElement {
 
@@ -19,8 +15,6 @@ public class CirElement {
     public CirElement(int x, int y) {
         loc = new Point(x, y);
         drawable.add(this);
-//        loc.x = x;
-//        loc.y = y;
     }
 
     public Rectangle getBounds() {
@@ -43,7 +37,6 @@ public class CirElement {
     }
 
     public void moveComponent(Point p) {
-//        dx
         loc = p;
     }
 

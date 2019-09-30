@@ -1,14 +1,12 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package circuitsimulator;
 
 import java.util.ArrayList;
 
-/**
+/** Contiene toda la información de la lógica de las compuertas dependiendo de sus entradas 
+ *  Los metodos son se los principales y luego se combinan para dar origen a las compuertas que 
+ * son las compuertas combinadas de entre las principales
  *
- * @author Hassan
+ * 
  */
 public class Logica {
 

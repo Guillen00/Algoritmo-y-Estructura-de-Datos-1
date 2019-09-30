@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package circuitsimulator;
 
 import java.awt.BasicStroke;
@@ -12,9 +8,11 @@ import java.awt.Stroke;
 import java.awt.geom.Ellipse2D;
 import java.util.ArrayList;
 
-/**
+/**Se crean los nodos ,se dibujan se añaden a lista de nodos,se utilizan para las conexiones y uniones 
+ * de compuertas 
+*    
  *
- * @author Hassan
+ * 
  */
 public class Node extends Component {
 

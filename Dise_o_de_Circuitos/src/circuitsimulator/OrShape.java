@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package circuitsimulator;
 
 import java.awt.Color;
@@ -9,9 +5,9 @@ import java.awt.Rectangle;
 import java.awt.geom.Area;
 import java.awt.geom.Ellipse2D;
 
-/**
+/**Se crean áreas para las OR  a utilizar ,en la que se dibujará la compuerta
  *
- * @author Hassan
+ * 
  */
 public class OrShape extends Area {
 

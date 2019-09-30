@@ -1,17 +1,12 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package circuitsimulator;
 
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
 import javax.swing.table.AbstractTableModel;
 
-/**
+/**Contiene información de la tabla ,como columnas y filas ,lee la matriz en la que anteriormente se guardaron 
+ * los datos y da tamaños de filas y columnas para acomodar la tabla
  *
- * @author Hassan
+ * 
  */
 public class TableModel1 extends AbstractTableModel {
 

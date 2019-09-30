@@ -1,12 +1,9 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package circuitsimulator;
 
-/**
+/**Es una clase especifica para la posicion de lineas y conectores ,ádemas da de que tipo es el conector a crear 
+ * 
  *
- * @author Hassan
+ * 
  */
 public class Types {
 

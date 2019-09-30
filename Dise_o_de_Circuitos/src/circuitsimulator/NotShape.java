@@ -1,15 +1,11 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package circuitsimulator;
 
 import java.awt.*;
 import java.awt.geom.*;
 
-/**
+/**Se crean áreas para las NOT a utilizar ,en la que se dibujará la compuerta 
  *
- * @author Hassan
+ * 
  */
 public class NotShape extends Area {
 

@@ -1,17 +1,11 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package circuitsimulator;
 
 import java.awt.Point;
-import circuitsimulator.Types.*;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
-/**
+/** Contiene en su mayoria las acciones que adquiere el mouse desde lo seleccionado ,localización
+ * y en donde realizo un clic
  *
- * @author Hassan
+ * 
  */
 public class Mouse {
 

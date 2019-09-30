@@ -1,19 +1,15 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package circuitsimulator;
 
 import javax.swing.*;
 import java.awt.*;
 
-/**
+/**Es la principal para la interfase utilizando en patron de fachada ,mostrando solo una parte del código 
+ * ocultando lo principal,esta clase conecta todas las clases que tienen elementos para mostrar en pantalla 
  *
- * @author Hassan
+ * 
  */
 public class Window extends JFrame {
     static Sheet sheet;
-    //static Simulacion sim;
     static String title = "Diseño de Circuitos by Leonardo Guillén Fernandez 2019";
     static Window ref;
     public Window(){

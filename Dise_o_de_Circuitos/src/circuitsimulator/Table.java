@@ -1,17 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package circuitsimulator;
 
 
 import java.awt.Graphics2D;
-import java.util.ArrayList;
 
-/**
+/** Tiene metodos que su funciones son, uno recibe un número decimal el cual es la cantidad de posibles 
+ * combinaciones y escribe todos los números binarios hasta llegar a las n posibilidades ,otra agarra ese 
+ * string y lo compara con el número de posibles combinaciones para que todos tengan la misma cantidad de 
+ * digitos y los añade a una matriz 
  *
- * @author leona
+ * 
  */
 public class Table extends Component {
     static Component con;
@@ -28,15 +26,11 @@ public class Table extends Component {
       
     }
     
-    
-    
-    
     String[][] listabinaria(int x){
         int y = ((int) Math.pow(2, x))-1;
         int z =0;
         data = new String [y+1][y+1];
         while (z<y+1){
-            //combination.add((String)space(Binario(z),y));
             data[z][0] = (String)space(Binario(z),y);
             System.out.println(space(Binario(z),y));
         z++;

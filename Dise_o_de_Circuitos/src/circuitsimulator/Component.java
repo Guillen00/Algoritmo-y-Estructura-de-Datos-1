@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package circuitsimulator;
 
 import java.awt.Graphics2D;
@@ -9,14 +5,14 @@ import java.awt.Shape;
 import java.util.ArrayList;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-/**
- *
- * @author Hassan
+/**Dibuja conectores ,entradas y salidas ,contienen las listas donde se almacenan los datos de las 
+ * compuertas
+ * 
+ * 
  */
 public abstract class Component {
 
     int x, y;
-//    int width, height;
     int tx = 0, ty = 0;
     static Boolean pullState = false;
     ArrayList<Component> runnable = new ArrayList<>();

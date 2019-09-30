@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package circuitsimulator;
 
 import javax.swing.*;
@@ -13,9 +9,10 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionListener;
 import java.awt.geom.GeneralPath;
 
-/**
- *
- * @author Hassan
+/** Da movimiento en el panel , tiene 2 Jradiobutton que dependiendo del seleccionado así será la 
+ * acción a realizar como dibujar o agregar componentes 
+ *Da un panel con lineas dibujadas de dorma cuadricular 
+ * 
  */
 public class Sheet extends JPanel {
 
@@ -77,9 +74,6 @@ public class Sheet extends JPanel {
                     case Component:
                         component(e);
                         break;
-                    case Select:
-                        select(e);
-                        break;
                     case Track:
                         track(e);
                         break;
@@ -111,7 +105,6 @@ public class Sheet extends JPanel {
 
                 mouseLoc.setLocation(e.getX(), e.getY());
                 Mouse.setMouseLocaiton(e.getX(), e.getY());
-                //Window.sim.changeMousePosition(mouseLoc.x, mouseLoc.y);
             }
         });
 
@@ -176,11 +169,7 @@ public class Sheet extends JPanel {
         }
     }
 
-    void select(MouseEvent e) {
-        if (e.getClickCount() == 2&&SwingUtilities.isRightMouseButton(e)){
-            Mouse.setDeleteLocation();
-        }
-    }
+    
 
 
     public void paint(Graphics g) {

@@ -1,23 +1,18 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package circuitsimulator;
 
 import java.awt.BasicStroke;
 import java.awt.Color;
-import java.awt.Font;
 import java.awt.Graphics2D;
 import java.awt.Polygon;
 import java.awt.Rectangle;
-import java.awt.Stroke;
 import java.awt.geom.Area;
 import java.awt.geom.Ellipse2D;
-import java.util.ArrayList;
 
-/**
+/** Se crean las compuertas NOT con dos valores de medidas
+ * Se crean metodos que mandan la lógica de las compuertas y dibujan la compuerta .
+ * 
  *
- * @author Hassan
+ * 
  */
 public class Not extends Component {
 

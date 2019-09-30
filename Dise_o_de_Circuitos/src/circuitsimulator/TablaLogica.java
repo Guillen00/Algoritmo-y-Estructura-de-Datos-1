@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package circuitsimulator;
 
 import java.awt.Dimension;
@@ -13,12 +9,12 @@ import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.table.TableModel;
 
-/**
+/** Crea una nueva ventana al accionar un boton y esta ventana contiene una tabla de la verdad ,
+ * contiene todas las combinaciones posibles para el número de compuertas puestas en el panel  
  *
- * @author leona
+ * 
  */
 public class TablaLogica extends JFrame {
-    //static Simulacion sim;
     static String title = "Tabla Lógica";
     static Connector CONNECTOR;
     static CircuitSimulator sim;
@@ -57,10 +53,6 @@ public class TablaLogica extends JFrame {
         return scrollPane;
     }
     }
-    
-    /**
-     *
-     * @return 
-     */
+  
     
 

@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package circuitsimulator;
 
 import java.awt.Dimension;
@@ -12,9 +8,11 @@ import javax.swing.*;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
-/**
+/** Se añaden los nombres de las compuertas a la listas ,agrega la Jlist a un panel junto a 
+ * botones y etiquetas informativas.
+ * También se programa la selección en la lista para mostrar la compuerta de la lista 
  *
- * @author Hassan
+ * 
  */
 public class ComponentsViewer extends JPanel {
 
@@ -55,7 +53,6 @@ public class ComponentsViewer extends JPanel {
                 if (!e.getValueIsAdjusting()) {
                     String name = (String) list.getSelectedValue();
                     Mouse.setComponent(name);
-                    //Mouse.mode = Mouse.mode.Component;
                     Verticalbar.instance.setComponentActive();
                     preview.repaint();
                 }
@@ -76,13 +73,5 @@ public class ComponentsViewer extends JPanel {
         this.add(table);
         this.add(Box.createRigidArea(new Dimension(0, 10)));
         this.add(pane);
-    }
-
-    static void addToList(String s) {
-        if (listOfComponents.contains(s)) {
-            return;
-        }
-        listOfComponents.add(s);
-        list.updateUI();
     }
 }

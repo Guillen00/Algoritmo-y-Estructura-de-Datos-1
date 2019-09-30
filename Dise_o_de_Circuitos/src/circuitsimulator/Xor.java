@@ -1,24 +1,15 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package circuitsimulator;
 
 import java.awt.BasicStroke;
 import java.awt.Color;
-import java.awt.Font;
 import java.awt.Graphics2D;
 import java.awt.Rectangle;
-import java.awt.Stroke;
-import java.awt.geom.Arc2D;
 import java.awt.geom.Area;
-import java.awt.geom.Ellipse2D;
-import java.awt.geom.Rectangle2D;
-import java.util.ArrayList;
 
-/**
+/**Se crean las compuertas XOR con dos valores de medidas y como n ,numero de entradas
+ * Se crean metodos que mandan la lógica de las compuertas y dibujan la compuerta .
  *
- * @author Hassan
+ * 
  */
 public class Xor extends Component {
 
@@ -84,11 +75,9 @@ public class Xor extends Component {
         g2d.setStroke(stroke);
         g2d.draw(shape);
         g2d.drawArc(x - 25, y, width / 2, height, -70, 140);
-//        g2d.translate(0, 0);
     }
 
     void delete() {
-        System.out.println("Deleter");
         Component.drawable.remove(this);
     }
 

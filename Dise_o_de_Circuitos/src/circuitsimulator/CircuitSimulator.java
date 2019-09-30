@@ -1,27 +1,16 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package circuitsimulator;
 
-import java.io.BufferedReader;
-import java.io.DataInputStream;
-import java.io.FileInputStream;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
-
-/**
+/** Se ejecuta en el main la clase Window para que inicie creando la ventana ,y se obtiene el valor 
+ * seleccionado en una Jlist creada en otra clase y dependiendo de la selección se llama a crear la 
+ * compuerta seleccionada
  *
- * @author Hassan
+ * 
  */
 public class CircuitSimulator {
 
     static Window win;
     static int countIn=0 ;
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         System.out.println("Inicio");
         win = new Window();
